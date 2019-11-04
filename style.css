@@ -110,6 +110,13 @@ div h2:nth-of-type(12){
     -webkit-transform: rotate(90deg);
 }
 
+.abilitys {
+    font-family: 'Open Sans';
+    float: right;
+    line-height: 350px;
+    -webkit-transform: rotate(90deg);
+}
+
 .progress-bar {
 
     width: 100%;
@@ -123,6 +130,10 @@ div h2:nth-of-type(12){
     -webkit-animation: two 9s  forwards;
     animation: two 9s  forwards;
     background-color:yellowgreen !important
+}
+
+.skills {
+    width: 700px;
 }
 .card {
     padding: 20px;
@@ -142,6 +153,33 @@ div h2:nth-of-type(12){
     padding: 5px;
     margin-right: 10px;
 }
+
+.fa-html5 {
+    color: #DD4B25;
+}
+.fa-js-square {
+    color:#F7DF1E ;
+}
+
+.fa-css3-alt {
+    color: #1778B7;
+}
+.fa-react {
+    color: #5ED4F4;
+}
+.fa-file-excel {
+    color: #016F38;
+}
+.fa-file-word {
+    color: #235E9D;
+}
+.fa-file-powerpoint {
+    color:#CC4425;
+}
+
+
+
+
 
 a i {
     color: #B3D170;

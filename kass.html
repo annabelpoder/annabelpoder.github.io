@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kasside treenimine</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+
+
+</head>
+
+
+<script>
+    function changeurl(theurl, id) {
+        document.getElementById(id).src = theurl
+    }
+
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+       <!-- slides[slideIndex - 1].style.display = "block"; -->
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+
+</script>
+
+<body>
+
+<!-- Start your project here-->
+<!--Main Navigation-->
+<header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+        <!-- Additional container -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <i class="fas fa-paw fa-2x light- blue-text "><a class="navbar-brand" href="#"></a></i>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Minust">Minust</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Galerii">Galerii</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Meelespea">Meelespea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Trikid">Trikid</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+
+            </div>
+            <!-- Collapsible content -->
+        </div>
+        <!-- Additional container -->
+
+    </nav>
+    <!--/.Navbar-->
+
+
+    <!--Mask-->
+    <div id="intro" class="view">
+
+        <div class="mask rgba-blue-slight">
+
+            <div class="container-fluid d-flex align-items-center h-100">
+
+                <div class="row   ">
+
+                    <div class="col">
+
+                        <!-- Description -->
+                        <p class="display-4 font-italic font-weight-bolder text-left " style="color: #1D2A4A">Kasside
+                            treenimine</p>
+                    </div>
+                    <div class="col-md-3">
+
+                        <!-- Description -->
+                        <p class="h4-responsive font-italic  text-right" style="color: #1D2A4A;font-weight: normal;">
+                            “Kassiga koosveedetud
+                            aeg ei ole kunagi raisatud” Sigmund Freud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.Mask-->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5">
+    <!--Main container-->
+    <div class="container ovelapping" id="Minust">
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-7 mb-4">
+
+                <div class="view overlay zoom">
+                    <img src="img/pictures/mina.jpg" class="img-fluid " alt="zoom">
+                    <figcaption class="figure-caption">Autor: Mona Lene Maanurm</figcaption>
+                    <div class="mask flex-center waves-effect waves-light">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 mb-4">
+
+                <h2 class="text-center">Minust endast</h2>
+                <hr>
+                <p>Olen 14 aastane tüdruk Mia ja mul on kaks kassi, kohe kaheseks saav Termi ja kümne aastane Mr. Winky.
+                    Olen väga kiindunud kassidesse ning vaimustatud nende võimest õppida erinevaid keerulisi trikke ja
+                    ülesandeid. Minu üheks suureks hobiks on kasside treenimine. Idee kasse treenima hakata tuli aasta
+                    tagasi, kui ühel päeval sattusin juhuslikult video peale, kus õpetati kassile erinevaid trikke. Ma
+                    olin nii vaimustunud sellest videost, et tahtsin ka ise midagi sellist proovida. Nii hakkasingi
+                    otsima
+                    rohkem infot kasside treenimise kohta ja katsetasin seda ka oma kasside peal.
+                </p>
+                <p>Kasside treenimine on koerte treenimisega võrreldes raskem, kuid täiesti teostatav. Kassid teevad
+                    seda
+                    ainult oma maiuste eest, kuid koerad teevad seda meie rõõmustamise eesmärgil. Kassid on päris isekad
+                    tegelased ning nendega võib üsna keeruline olla, kuid kannatlikkuse ja järjepidevusega on kõik
+                    võimalik. </p>
+                <p>
+                    Selle veebilehe eesmärgiks on äratada inimestes huvi kasside treenimise vastu ja näidata, et see ei
+                    olegi nii raske. Tahan innustada inimesi oma kassiga tegelema ja oma aega panustama millelegi,
+                    mis nende lemmikule rõõmu valmistab. Samuti on see ka tore ajaviide ja hea võimalus oma kassiga
+                    tugevamat sidet luua.
+                </p>
+
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+        <hr class="my-5">
+
+        <h2 class="mb-5 font-weight-bold text-center ovelapping" id="Galerii">Galerii</h2>
+        <div class="container">
+            <div class="row">
+                <a href="img/pictures/i.jpg" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/8.jpg" class="img-fluid rounded ">
+                </a>
+
+                <a href="img/pictures/c.jpg" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/3.jpg" class="img-fluid rounded">
+                </a>
+                <a href="img/pictures/h.JPG" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/7.jpg" class="img-fluid rounded">
+                </a>
+
+            </div>
+            <div class="row" style="padding-top: 1%">
+                <a href="img/pictures/d.JPG" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/4.jpg" class="img-fluid rounded">
+                </a>
+
+
+                <a href="img/pictures/" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/1.jpg" class="img-fluid rounded">
+                </a>
+                <a href="img/pictures/g.jpg" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/6.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="row" style="padding-top: 1%">
+                <a href="img/pictures/f.jpg" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/5.jpg" class="img-fluid rounded">
+                </a>
+                <a data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/9.jpg" class="img-fluid rounded">
+                </a>
+                <a href="img/pictures/b.jpg" data-toggle="lightbox" data-gallery="gallery"
+                   class="col-md-4">
+                    <img src="img/pictures/pildid/2.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+
+        </div>
+
+
+        <hr class="my-5">
+
+        <!--Section: Gallery-->
+
+        <section id="gallery">
+
+
+            <!--Grid row-->
+            <div class="row ovelapping" id="Video">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-6">
+
+                    <video class="video-fluid z-depth-1" autoplay loop controls muted fullscreen>
+                        <source src="img/treeningvideo/trenn.mp4" type="video/mp4"/>
+                    </video>
+
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4">
+
+
+                    <h4 class="mb-3"><strong>Kassid trikke tegemas</strong></h4>
+                    <p>Videos demonstreerib minu kass erinevaid põnevaid trikke,
+                        mida on võimalik praktiliselt kõikidele kassidele õpetada,
+                        kui endal jätkub tahtmist, kannatlikust ning järjepidevust.</p>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+
+
+        <hr class="my-5">
+
+        <h2 class="mb-5 font-weight-bold text-center ovelapping" id="Meelespea">Meelespea</h2>
+        <div class="row">
+
+            <div style="font-size: 1.2rem;">
+
+                <div><i class="fas fa-circle fa-fw blue-text"></i> Treeni kassi 1 – 2 korda päevas 2 – 4 minutit
+                    korraga.
+                </div>
+                <div><i class="fas fa-circle fa-fw blue-text"></i> Lõpeta treening enne kui kassil huvi kaob.</div>
+                <div><i class="fas fa-circle fa-fw blue-text"></i> Ära treeni, kui sul on halb tuju. Kass saab aru
+                    sellest ning talle ei meeldi
+                    kui sa oma pahurust tema peal välja elad.
+                </div>
+                <div><i class="fas fa-circle fa-fw blue-text"></i> Kasuta premeerimiseks väga head maiust (kana- või
+                    loomaliha).
+                </div>
+                <div><i class="fas fa-circle fa-fw blue-text"></i> Enne treenimist õpeta kassile mida tähendab sõna
+                    “JAH”.
+                </div>
+                <div><i class="fas fa-circle fa-fw blue-text"></i> „JAH“ – ütle sõna “JAH” ning premeeri kassi, tee seda
+                    u 10 – 15 korda enne
+                    esimest treeningut. See õpetab kassile seda, et kui ta teeb midgi õigesti, siis sa ütled “JAH” ning
+                    premeerid teda.
+                </div>
+            </div>
+
+
+        </div>
+
+        <hr class="my-5">
+        <section id="collapse">
+            <h2 class="mb-5 font-weight-bold text-center ovelapping" id="Trikid">Trikid</h2>
+
+
+            <div class="row" id="kateplaks">
+                <div class="col">
+
+
+                    <h2 class="mb-5 text-center">Viska viis</h2>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#plaks1"
+                            onclick="changeurl('img/pictures/plaks/plaks1_3.jpg', 'kate-plaks')">
+                        1. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#plaks2"
+                            onclick="changeurl('img/pictures/plaks/plaks2.jpg', 'kate-plaks')">
+                        2. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#plaks3"
+                            onclick="changeurl('img/pictures/plaks/plaks3_2.jpg', 'kate-plaks')">
+                        3. samm
+                    </button>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#plaks4"
+                            onclick="changeurl('img/pictures/plaks/plaks2_2.jpg', 'kate-plaks')">
+                        4. samm
+                    </button>
+
+                    <div class="collapse" id="plaks1" data-parent="#kateplaks">
+                        <div class="mt-3">
+                            <p>
+                                Meelita kass maiusega enda ette istuma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="plaks2" data-parent="#kateplaks">
+                        <div class="mt-3">
+                            <p>
+                                Puuduta õrnalt oma kassi käppa ning kui ta seda liigutab, siis premeeri teda. Harjuta
+                                seda
+                                niikaua kuni su kass
+                                tõstab käppa iseenesest, siis kui sinu käsi tema käpa poole liigub. Harjuta seda ainult
+                                ühe käpaga korraga.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="plaks3" data-parent="#kateplaks">
+                        <div class="mt-3">
+                            <p>
+                                Nüüd kui su kass tõstab iseenesest käppa sinu käe suunas, siis tee ülesanne raskemaks.
+                                Aseta oma käsi iga
+                                korraga natuke kõrgemale ja premeeri kui su kass seda puudutab, aga ära kiirusta ning
+                                tee
+                                ülesannet aeglaselt
+                                raskemaks. Kui su kass satub segadusse, siis tee ülesanne lihtsamaks ning aseta käsi
+                                madalamale ja
+                                muuda ülesannet aeglasemalt jälle raskemaks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="plaks4" data-parent="#kateplaks">
+                        <div class="mt-3">
+                            <p>
+                                Kui su kass oskab anda sulle käppa, siis tuleb see nüüd edasi arendada käeplaksuks.
+                                Jätka samamoodi
+                                nagu enne ja aseta käsi jällegi tasapisi aina kõrgemale, kuni su kass oskab anda sulle
+                                plaksu. Ja nii ongi
+                                trikk selge.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- / Collapse buttons -->
+
+                <!-- Collapsible element -->
+
+
+                <div class="col">
+                    <div class="view overlay z-depth-1-half">
+                        <img id="kate-plaks" src="img/pictures/plaks/plaks2_2.jpg" class="card-img-top myimage" alt="">
+                        <div class="mask rgba-white-light"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row" id="kapad">
+                <div class="col">
+
+
+                    <h2 class="mb-5 text-center">Käpad jalgadel</h2>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#kapad1"
+                            onclick="changeurl('img/pictures/kapad/kapad1.jpg', 'kapad-jalgadel')">
+                        1. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#kapad2"
+                            onclick="changeurl('img/pictures/kapad/kapad1.jpg', 'kapad-jalgadel')">
+                        2. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#kapad3"
+                            onclick="changeurl('img/pictures/kapad/kapad2.jpg', 'kapad-jalgadel')">
+                        3. samm
+                    </button>
+                    <button class="btn btn-trick" type="button" data-toggle="collapse" data-target="#kapad4"
+                            onclick="changeurl('img/pictures/kapad/kapad4_1.jpg', 'kapad-jalgadel')">
+                        4. samm
+                    </button>
+                    <button class="btn btn-trick" type="button" data-toggle="collapse" data-target="#kapad5"
+                            onclick="changeurl('img/pictures/kapad/kapad4.jpg', 'kapad-jalgadel')">
+                        5. samm
+                    </button>
+                    <button class="btn btn-trick" type="button" data-toggle="collapse" data-target="#kapad6"
+                            onclick="changeurl('img/pictures/kapad/kapad4.jpg', 'kapad-jalgadel')">
+                        6. samm
+                    </button>
+
+                    <div class="collapse" id="kapad1" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p>
+                                Meelita kass maiusega oma jalge vahele ja premeeri teda maiusega seal olemise eest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="kapad2" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p>
+                                Hoia maiust kassi nina lähedal, kuid ära talle seda kätte anna ning tee paar sammu ja
+                                premeeri kassi, kui ta
+                                jalge vahel kaasa kõnnib.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="kapad3" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p>
+                                Võta üks paar jalnõusid ja aseta need enda jalge vahele. Meelita kass maiusega jalanõude
+                                peale. Pead
+                                natuke maiust edasi tagasi liigutama, et kassi jalanõu peale juhtida, kui ta seda
+                                koheselt ei tee. premeeri igat
+                                väikest saavutust või pingutust, kui kass kasvõi ühe käpa asetab jalanõu peale või seda
+                                puudutab.
+                                Harjuta niikaua, kuni kass mõlema käpaga astub jalnõu peale ning siis premeeri teda seal
+                                püsimise eest.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="kapad4" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p>
+                                Pane jalanõud jalga ning aseta jalad nii, et varbad ükteist puudutaksid, kuid kannad
+                                jäävad lahku. Nii on
+                                kassil võimalik olla sinu jalge vahel ning esialgu on lihtsam, kui jalad on lähestikku
+                                koos. Nüüd meelita
+                                kass uuesti jalanõude peale ja premeeri igat väikest pingutust oma käpa sinu jalge peale
+                                asetamisest.
+                                Harjuta niikaua, kuni kass suudab mõlema käpaga sinu jalgade peale astuda ja premeeri
+                                teda
+                                sageli.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="kapad5" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p>
+                                Kui kass seisab julgelt oma esikäppadega sinu jalgadel, siis hakka tasapisi ja õrnalt
+                                oma jalgu liigutama
+                                ning premeeri teda iga liigutuse ajal mida sa teed. Kui kass su jalgadelt maha tuleb,
+                                siis
+                                meelita ta uuesti
+                                tagasi ja premeeri jalgade peal seismise eest ning proovi uuesti rahulikult jalgu
+                                liigutada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="kapad6" data-parent="#kapad">
+                        <div class="mt-3">
+                            <p> Hakka aina rohkem jalgu liigutama ja premeeri kassi sageli ning võta protsessi
+                                aeglaselt.
+                                Nüüd muuda jala
+                                liigutused pisikesteks sammuteks ja premeeri igat sammu. Harjuta niikaua, kuni su kass
+                                on
+                                enesekindel sinu jalgade peal seismisega, kui sa kõnnid. Vähenda ka oma
+                                maiuse andmise sagedust. Tee näiteks kaks kolm sammu enne, kui annad maiust ja nii ongi
+                                trikk selge.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- / Collapse buttons -->
+
+                <!-- Collapsible element -->
+
+
+                <div class="col">
+                    <div class="view overlay z-depth-1-half">
+                        <img id="kapad-jalgadel" src="img/pictures/kapad/kapad4.jpg" class="card-img-top myimage"
+                             alt="">
+                        <div class="mask rgba-white-light"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row" id="kaerongad">
+                <div class="col">
+
+
+                    <h2 class="mb-5 text-center">Käe rõngad</h2>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#rongad1"
+                            onclick="changeurl('img/pictures/rongad/rongas1_1.jpg', 'rongad')">
+                        1. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#rongad2"
+                            onclick="changeurl('img/pictures/rongad/rongas1.jpg', 'rongad')">
+                        2. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#rongad3"
+                            onclick="changeurl('img/pictures/rongad/rongas1.jpg', 'rongad')">
+                        3. samm
+                    </button>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#rongad4"
+                            onclick="changeurl('img/pictures/rongad/rongas2.jpg', 'rongad')">
+                        4. samm
+                    </button>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#rongad5"
+                            onclick="changeurl('img/pictures/rongad/rongas3.jpg', 'rongad')">
+                        5. samm
+                    </button>
+
+                    <div class="collapse" id="rongad1" data-parent="#kaerongad">
+                        <div class="mt-3">
+                            <p>
+                                Otsi koht seina ääres ning meelita oma kass maiusega sinna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="rongad2" data-parent="#kaerongad">
+                        <div class="mt-3">
+                            <p>
+                                Aseta üks käsi madalale vastu seina ning viska maius teisele poole kätt, et kass üle
+                                hüppaks. Harjuta
+                                tehtut paar korda.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="rongad3" data-parent="#kaerongad">
+                        <div class="mt-3">
+                            <p>
+                                Nüüd hakka tasapisi kätt kõrgemale tõstma ja korda tehtut.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="rongad4" data-parent="#kaerongad">
+                        <div class="mt-3">
+                            <p>
+                                Lisa ka teine käsi ülespoole vastu seina, et tekiks rõngas ning viska maius teisele
+                                poole kätt ja tõsta käsi
+                                kohe peale selle viskamist vastu seina. Korda seda ka mitu korda, kuni kass julgelt läbi
+                                hüppab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="rongad5" data-parent="#kaerongad">
+                        <div class="mt-3">
+                            <p>
+                                Hakka tasapisi käsi kokkupoole tooma, et tekiks väiksem rõngas ning eemaldu aeglaselt ka
+                                seina juursest.
+                                Harjuta ka püsti asendis ning premeeri kassi igakord, kui ta läbi hüppab. Ja nii ongi
+                                trikk
+                                selge.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- / Collapse buttons -->
+
+                <!-- Collapsible element -->
+
+
+                <div class="col">
+                    <div class="view overlay z-depth-1-half">
+                        <img id="rongad" src="img/pictures/rongad/rongas3.jpg" class="card-img-top myimage" alt="">
+                        <div class="mask rgba-white-light"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row" id="slaalom">
+                <div class="col">
+
+                    <h2 class="mb-5 text-center">Jala slaalom</h2>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom1"
+                            onclick="changeurl('img/pictures/slaalom/slaalom1_1.jpg', 'slaalomid')">
+                        1. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom2"
+                            onclick="changeurl('img/pictures/slaalom/slaalom2.jpg', 'slaalomid')">
+                        2. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom3"
+                            onclick="changeurl('img/pictures/slaalom/slaalom3.jpg', 'slaalomid')">
+                        3. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom4"
+                            onclick="changeurl('img/pictures/slaalom/slaalom4.jpg', 'slaalomid')">
+                        4. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom5"
+                            onclick="changeurl('img/pictures/slaalom/slaalom4.jpg', 'slaalomid')">
+                        5. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#slaalom6"
+                            onclick="changeurl('img/pictures/slaalom/slaalom4.jpg', 'slaalomid')">
+                        6. samm
+                    </button>
+
+                    <div class="collapse" id="slaalom1" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Meelita kass maiusega enda jalgade kõrvale
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="slaalom2" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Astu üks samm ette ja meelita kass maiusega jalge vahelt läbi ning premeeri teda
+                                maiusega
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="slaalom3" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Astu teine samm ja korda tehtut. Jätka niikaua, kuni kass on aru saanud, mida teha tuleb
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="slaalom4" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Kui kass saab aru mida teha tuleb, siis vähenda maiuste andmise kordi. premeeri teda
+                                nüüd
+                                iga kahe kolme korra tagant,
+                                kui ta jalge vahelt läbi läheb. Kaugenda ka tasapisi käesignaali ehk maiusega
+                                meelitamist. Kui kass satub segadusse,
+                                siis muuda ülesanne lihtsamaks ehk premeeri oma kassi sagedamini ning meelita teda
+                                maiusega
+                                tema lähedalt.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="slaalom5" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Harjuta eelmist sammu niikaua, kuni kass oskab käesignaali peale jalge vahel slaalomit,
+                                siis ürita
+                                käesignaali rohkem hajutada. Proovi kõigepealt astuda ühe jalaga ette ja vaata kas su
+                                kass läheb ise ilma
+                                käesignaalita jalge vahelt läbi. Kui jah siis premeeri maiusega, kui ei siis pole hullu.
+                                Kui kass ei lähe kohe
+                                läbi, siis tee harjutus lihtsamaks ja lisa koheselt käesignaal, et ta teaks mida ta
+                                tegema peab.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="slaalom6" data-parent="#slaalom">
+                        <div class="mt-3">
+                            <p>
+                                Harjuta veel käesignaaliga ning proovi uuesti seda hajutada. Kui kass hakkab ilma
+                                käesignaalita jalge
+                                vahel slaloomit tegema, siis premeeri teda ohtralt maiustega ning trikk ongi selge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- / Collapse buttons -->
+
+                <!-- Collapsible element -->
+
+
+                <div class="col">
+                    <div class="view overlay z-depth-1-half">
+                        <img id="slaalomid" src="img/pictures/slaalom/slaalom2.jpg" class="card-img-top myimage" alt="">
+                        <div class="mask rgba-white-light"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row" id="katehupe">
+                <div class="col">
+
+
+                    <h2 class="mb-5 text-center">Käte peale hüpe</h2>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe1"
+                            onclick="changeurl('img/pictures/hupe/hupe2.jpg', 'hupe')">
+                        1. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe2"
+                            onclick="changeurl('img/pictures/hupe/hupe2.jpg', 'hupe')">
+                        2. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe3"
+                            onclick="changeurl('img/pictures/hupe/hupe1.jpg', 'hupe')">
+                        3. samm
+                    </button>
+
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe4"
+                            onclick="changeurl('img/pictures/hupe/hupe1.jpg', 'hupe')">
+                        4. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe5"
+                            onclick="changeurl('img/pictures/hupe/hupe5.jpg', 'hupe')">
+                        5. samm
+                    </button>
+                    <button class="btn btn-trick" data-toggle="collapse" data-target="#hupe6"
+                            onclick="changeurl('img/pictures/hupe/hupe5.jpg', 'hupe')">
+                        6. samm
+                    </button>
+
+                    <div class="collapse" id="hupe1" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Leia koht seina ääres. Meelita maiusega kass oma käe peale esikäppadega ning premeeri
+                                teda
+                                seal olemise
+                                eest. Alusta käe hoidmist väga maadligi. Alguses hoia kätt kasvõi täiesti maas ning
+                                meelita kass käe peale
+                                astuma ja hiljem hakka kätt kõrgemale tõstma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="hupe2" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Harjuta tehtut palju ning premeeri sageli. Kui kass satub segadusse, siis tee ülesanne
+                                lihtsamaks ja pane käsi
+                                madalamale.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="hupe3" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Aseta maius kuhugi kõrgemale kuhu su kass seistes ligi ei ulatu ning vaata, et ta oleks
+                                motiveeritud seda kätte saama.
+                                Nüüd pane kaks kätt maast kõrgemale ja vaata kas kass püüab käte peale astuda. Kui ta
+                                kasvõi proovib,
+                                siis premeeri koheselt. Kui kass ronis kõikide jalgadega sinu käte peale, siis tasakesi
+                                tõsta ta maiuste juurde. Kui
+                                mitte, siis pole hullu. Tee ülesanne lihtsamaks ja hakka teda jälle ühe käe peale
+                                meelitama ning tee
+                                ülesanne tasapisi jälle raskemaks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="hupe4" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Nüüd kui su kass igakord käte peale ronib, siis kohe enne ronimist tee käesignaalina
+                                kaks kiiret plaksu, et
+                                ta käte peale hüppaks. Harjuta seda niikaua kuni kass julgelt peale käesignaali käte
+                                peale hüppab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="hupe5" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Nüüd aseta maius kuskile veel kõrgemale ning hakka tasapisi püstisemas asendis seda
+                                harjutama, kuni
+                                saad püsti seista. Võta seda protsessi hästi rahulikult.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="hupe6" data-parent="#katehupe">
+                        <div class="mt-3">
+                            <p>
+                                Kui kass julgelt käesignaali peale käte peale hüppab, siis hakka maiusest natuke
+                                kaugemale liikuma, kuni
+                                kass hüppab käte peale nii, et tal pole maiust vaja näha. Nii saad hakata hoidma maiust
+                                käes ning anna
+                                käesignaal ja kui kass hüppab käte peale, siis premeeri teda käest. Ja nii ongi trikk
+                                selge.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- / Collapse buttons -->
+
+                <!-- Collapsible element -->
+
+                <div class="col">
+                    <div class="view overlay z-depth-1-half">
+                        <img id="hupe" src="img/pictures/hupe/hupe5.jpg" class="card-img-top myimage" alt="">
+                        <div class="mask rgba-white-light"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <hr class="my-5">
+
+    </div>
+    <!--Main container-->
+</main>
+<!--Main layout-->
+
+
+<!-- Footer -->
+<footer class="page-footer font-small footer-dark ">
+
+    <div class="footer-dark">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a> Designed and programmed by AP</a>
+        </div>
+        <!-- Copyright -->
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.js"></script>
+<!-- Carousel options -->
+<script>
+    $('.carousel').carousel({
+        interval: 3000,
+    })
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

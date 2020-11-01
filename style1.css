@@ -1,0 +1,249 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+div h2 {
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 72px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 20px;
+    float: bottom;
+    opacity: 0.0;
+    animation: port 3s 1 forwards;
+    -webkit-animation: port 3s 1 forwards;
+}
+
+div h2:nth-of-type(2){
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+
+div h2:nth-of-type(3){
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+div h2:nth-of-type(4){
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+div h2:nth-of-type(5){
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+
+div h2:nth-of-type(6){
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+div h2:nth-of-type(7){
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+
+div h2:nth-of-type(8){
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+}
+
+div h2:nth-of-type(9){
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+div h2:nth-of-type(10) {
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
+div h2:nth-of-type(11){
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+div h2:nth-of-type(12){
+    animation-delay: 1.1s;
+    -webkit-animation-delay: 1.1s;
+}
+@-webkit-keyframes port {
+    0%{
+        -webkit-transform: rotateY(90deg) translateY(25%);
+        opacity: 0.0;
+    }
+    100%{
+        -webkit-transform: rotateY(0deg) translateY(0%);
+        opacity: 1.0;
+    }
+}
+
+.container {
+    padding: 50px;
+}
+
+.myself{
+    width: 350px;
+    height: auto;
+    border-radius: 8%;
+    padding: 20px;
+}
+
+.good{
+    line-height: 390px;
+    font-family: 'Open Sans';
+    float: right;
+    -webkit-transform: rotate(90deg);
+}
+
+.education{
+    align-items: flex-end;
+    line-height: 250px;
+    font-family: 'Open Sans';
+    float: left;
+    -webkit-transform: rotate(-90deg);
+}
+
+
+.jobs {
+    font-family: 'Open Sans';
+    float: right;
+    -webkit-transform: rotate(90deg);
+    height: 100%;
+}
+
+.abilitys {
+    font-family: 'Open Sans';
+    float: right;
+    line-height: 350px;
+    -webkit-transform: rotate(90deg);
+}
+
+.progress-bar {
+
+    width: 100%;
+    -webkit-animation:  one 9s 1 forwards;
+    animation: one 9s 1 forwards;
+    background-color:green !important
+}
+
+.uni {
+    width: 85%;
+    -webkit-animation: two 9s  forwards;
+    animation: two 9s  forwards;
+    background-color:yellowgreen !important
+}
+
+.skills {
+    width: 950px;
+}
+
+.card {
+    width: 190px;
+    height: 200px;
+   margin: auto;
+ }
+.card-no-border {
+    border: 0px !important;
+}
+ .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; 
+    background-color: rgba(211, 211, 211, 0.24);
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+    
+  .card-back {
+    background-color:yellowgreen;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.display-4 {
+    color: yellowgreen;
+}
+
+.icon {
+    margin-top: 20px;
+    font-size: 35px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.fa-html5 {
+    color: #DD4B25;
+}
+.fa-js-square {
+    color:#F7DF1E ;
+}
+
+.fa-css3-alt {
+    color: #1778B7;
+}
+.fa-react {
+    color: #5ED4F4;
+}
+.fa-file-excel {
+    color: #016F38;
+}
+.fa-file-word {
+    color: #235E9D;
+}
+.fa-file-powerpoint {
+    color:#CC4425;
+}
+
+
+
+
+
+a i {
+    color: #B3D170;
+}
+
+.motivation {
+    width: 800px;
+   height: 200px;
+    background-color: #F8F9FA !important;
+}
+
+ .line {
+    height: 2px;
+    background: black;
+    position: absolute;
+    left:1px;
+    -webkit-animation: one 3.75s 1 forwards;
+    animation: one 3.75s 1 forwards;
+}
+
+
+@-webkit-keyframes one {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes two {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
